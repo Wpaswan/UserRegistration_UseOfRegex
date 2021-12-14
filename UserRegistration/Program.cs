@@ -20,6 +20,7 @@ if (LName.ValidateEmail(email))
     Console.WriteLine("Email accepted");
 else
     Console.WriteLine("Invalid!!");
+
 Registration num = new Registration();
 Console.WriteLine("Enter mobile number");
 var number = Console.ReadLine();
@@ -34,4 +35,13 @@ if (num.ValidatePasswordRule1(pwd)==true)
 else
     Console.WriteLine("Invalid");
 
+
+
+Registration num=new Registration();
+Console.WriteLine("Enter mobile number");
+var number=Console.ReadLine();
+if (num.ValidateMobileNumber(number)==true)
+    Console.WriteLine("Mobile number eccepted");
+else
+    Console.WriteLine("Please enter a valid number");
 
